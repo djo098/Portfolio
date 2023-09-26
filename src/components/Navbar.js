@@ -1,6 +1,7 @@
-import React from "react";
+import React, { Component } from "react";
 // import ReactDOM from "react-dom/client";
 import "../styles/Navbar.scss";
+import Pdf from "../documents/CV pt.pdf"
 // import App from "../App";
 
 const activate = e => {
@@ -12,25 +13,12 @@ const activate = e => {
     document.getElementById(e.currentTarget.id).classList.add('active');
 }
 
-const downloadResume = () => {
-    fetch('CV pt.pdf').then(response => {
-        response.blob().then(blob => {
-            const fileURL = window.URL.createObjectURL(blob);
-
-            let alink = document.createElement('a');
-            alink.href = fileURL;
-            alink.download = 'CV pt.pdf';
-            alink.click();
-        })
-    })
-}
-
 const Navbar = () => {
   return (
     <div className="nav-bar">
       <div className="container">
         <div className="nav-menu">
-          <a href="#" id="home" className="active" onClick={activate}>
+          <a href="#home" id="home" className="active" onClick={activate}>
             diogomateus<span id="dev">dev</span>
           </a>
           <a href="#sobre" id="sobre" onClick={activate}>
@@ -42,8 +30,8 @@ const Navbar = () => {
           <a href="#contato" id="contato" onClick={activate}>
             contato
           </a>
-          <a href="#curriculo" id="curriculo" onClick={downloadResume}>
-            curriculo <i class="fa-solid fa-file-arrow-down" style={{color: "#e19851"}}></i>
+          <a href={Pdf} target = "_blank" id="curriculo">
+            curriculo <i class="fa-solid fa-arrow-up-right-from-square" style={{color: "#e19851"}}></i>
           </a>
 
           <div className="dropdown">
