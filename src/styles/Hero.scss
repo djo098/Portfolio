@@ -1,5 +1,6 @@
 .hero {
     height: 100vh;
+    cursor: default;
 
     .container {
         position: relative;
@@ -24,23 +25,22 @@
 
         .front-text {
             padding-left: 20px;
+            padding-right: 20px;
             font-family: 'Averia Serif Libre';
-            font-size: 40px;
+            font-size: 35px;
             font-weight: 400;
             color: #333;
             margin-top: 50px;
+            line-height: 35px;
 
             .attention {
                 color: #e19851;
             }
 
             .underline {
-                text-decoration: none;
-                color: #333;
-                cursor: pointer;
                 background:
                     linear-gradient(to right, #e199517b, #e198517b),
-                    linear-gradient(to right, #333, #e19851);
+                    linear-gradient(to right, #333,#e19851, #e19851);
                 background-size: 100% 0.1em, 0 0.1em;
                 background-position: 100% 100%, 0 100%;
                 background-repeat: no-repeat;
