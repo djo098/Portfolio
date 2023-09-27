@@ -2,6 +2,7 @@ import React from "react";
 import Button from "./Button"
 import "../styles/AboutMe.scss";
 import pfp from "../images/Firefly guy in sunglasses posing in front of a Torii Gate 30397.jpg";
+import pfpSmall from "../images/bizniz.png";
 
 // For the .header
 import { ReactComponent as LineSvg } from "../images/50px line.svg";
@@ -16,6 +17,7 @@ const AboutMe = () => {
           </div>
           <div className="header">
             <LineSvg className="Svg1" /> <h1>&#60;Sobre /&#62;</h1>
+            <img src={pfpSmall} className="pfp-small" alt="small profile pic"/>
           </div>
           <div className="about-me-content">
             <p>
