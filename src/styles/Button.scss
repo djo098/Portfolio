@@ -26,3 +26,9 @@
         box-shadow: none;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .button {
+        width: 300px;
+    }
+}
