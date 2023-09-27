@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.ef6c7eef.css",
+    "main.css": "/Portfolio/static/css/main.a8977f1b.css",
     "main.js": "/Portfolio/static/js/main.85859486.js",
     "static/js/787.128fc6e9.chunk.js": "/Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/Firefly guy in sunglasses posing in front of a Torii Gate 30397.jpg": "/Portfolio/static/media/Firefly guy in sunglasses posing in front of a Torii Gate 30397.ea03ce49b3b7a8e87097.jpg",
@@ -9,12 +9,12 @@
     "index.html": "/Portfolio/index.html",
     "static/media/mouse.svg": "/Portfolio/static/media/mouse.a77a5da8836261a17c9186c96ca262b0.svg",
     "static/media/50px line.svg": "/Portfolio/static/media/50px line.3712b34dbe156853774a87ec25046369.svg",
-    "main.ef6c7eef.css.map": "/Portfolio/static/css/main.ef6c7eef.css.map",
+    "main.a8977f1b.css.map": "/Portfolio/static/css/main.a8977f1b.css.map",
     "main.85859486.js.map": "/Portfolio/static/js/main.85859486.js.map",
     "787.128fc6e9.chunk.js.map": "/Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef6c7eef.css",
+    "static/css/main.a8977f1b.css",
     "static/js/main.85859486.js"
   ]
 }
