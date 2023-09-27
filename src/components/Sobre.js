@@ -24,15 +24,13 @@ const AboutMe = () => {
               Olá. O meu nome é{" "}
               <span className="attention bold underline">Diogo Coelho Mateus</span>. Sou
               licenciado em TI e vivo em Lisboa, Portugal. Tenho largas
-              competências em muitos{" "}
-              <span className="attention">softwares de design</span> e{" "}
+              competências em vários{" "}
+              <span className="attention">programas de design</span> e{" "}
               <span className="attention">frameworks de frontend</span>, como
-              por exemplo React e Bootstrap para criar websites modernos e
-              vibrantes. Tenho também conhecimentos em algumas{" "}
-              <span className="attention">tecnologias full stack</span> tipo
-              MERN ou até de{" "}
-              <span className="attention">frameworks de backend</span> tipo
-              Django ou Spring.
+              por exemplo React e Bootstrap para desenhar e criar websites modernos e
+              vibrantes. Possuo ainda algumas competências em algumas{" "}
+              <span className="attention">tecnologias full stack</span> ou até de{" "}
+              <span className="attention">frameworks de backend</span> que me permitem criar websites mais complexos.
               <br /><br />
               Grande parte da minha experiência anda à volta de{" "}
               <span className="attention">UI/UX design</span> e de{" "}
