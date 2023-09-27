@@ -1,6 +1,6 @@
 import React from "react";
-import { ReactComponent as LineSvg } from "../svg/50px line.svg";
-import { ReactComponent as MouseSvg } from "../svg/mouse.svg";
+import { ReactComponent as LineSvg } from "../images/50px line.svg";
+import { ReactComponent as MouseSvg } from "../images/mouse.svg";
 import "../styles/Hero.scss";
 
 const Hero = () => {
@@ -8,7 +8,7 @@ const Hero = () => {
     <div className="hero">
       <div className="container">
         <div className="header">
-          <LineSvg className="Svg1"/> <h1>hello world</h1>
+          <LineSvg className="Svg1"/> <h1>&#60;HelloWorld /&#62;</h1>
         </div>
         <div className="front-text">
           O meu nome é <span className="attention">Diogo</span> e<br />

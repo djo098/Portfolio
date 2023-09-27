@@ -2,6 +2,8 @@ import React from "react";
 // import ReactDOM from "react-dom/client";
 import "../styles/Navbar.scss";
 import Pdf from "../documents/CV pt.pdf";
+import Pt from "../images/portugal.png";
+import En from "../images/united-kingdom.png";
 // import App from "../App";
 
 const activate = (e) => {
@@ -45,7 +47,7 @@ const Navbar = () => {
 
           <div className="dropdown">
             <p className="language">
-              pt{" "}
+              <img src={Pt} className="flag" alt="portuguese flag" /> &nbsp; {" "}
               <i
                 className="fa-solid fa-chevron-down"
                 style={{ color: "#e19851" }}
@@ -53,7 +55,7 @@ const Navbar = () => {
             </p>
             <div className="dropdown-content">
               <a href="/en" id="en">
-                en
+                <img src={En} className="flag" alt="english flag" />{" "}
               </a>
             </div>
           </div>

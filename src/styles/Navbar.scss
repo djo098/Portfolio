@@ -74,8 +74,18 @@
             margin: 0;
         }
 
+        p {
+            display: flex;
+            justify-content: center;
+        }
+            
+        img {
+            margin: auto 0;
+            width: 20px;
+        }
+
         .dropdown-content {
-            width: 83.266px;
+            width: 84.813px;
             display: none;
             position: absolute;
             background-color: #292929;
@@ -116,6 +126,7 @@
         &::after {
             height: 0px;
         }
+
         display: none;
         padding: 20px;
     }
@@ -123,7 +134,9 @@
 
 @media screen and (max-width: 991px) {
     .nav-menu {
-        a:not(:first-child), p:not(:first-child) {
+
+        a:not(:first-child),
+        p:not(:first-child) {
             display: none;
         }
 
@@ -141,11 +154,13 @@
                 right: 0;
                 margin-top: 20px;
                 background-color: #292929;
+
                 a {
                     display: block;
                     position: relative;
                     color: #e19851;
                 }
+
                 i {
                     transform: rotate(0deg);
                 }
@@ -163,7 +178,7 @@
                 transform-origin: bottom left;
                 transition: transform 0.2s ease-out;
             }
-        
+
             a.active::after {
                 transform: scaleX(0.6);
                 transform-origin: bottom left;
