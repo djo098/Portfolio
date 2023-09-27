@@ -12,16 +12,16 @@ const NavbarEn = () => {
             diogomateus<span id="dev">dev</span>
           </a>
           <a href="/" id="sobre">
-            sobre
+            about
           </a>
           <a href="/" id="projetos">
-            projetos
+            projects
           </a>
           <a href="/" id="contato">
-            contato
+            contact
           </a>
           <a href="/" id="curriculo">
-            currículo <i class="fa-solid fa-file-arrow-down" style={{color: "#e19851"}}></i>
+            resume <i class="fa-solid fa-file-arrow-down" style={{color: "#e19851"}}></i>
           </a>
 
           <div className="dropdown">
