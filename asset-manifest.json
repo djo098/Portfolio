@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.7de0182b.css",
-    "main.js": "/Portfolio/static/js/main.ac34f0a4.js",
+    "main.css": "/Portfolio/static/css/main.ce82ce7d.css",
+    "main.js": "/Portfolio/static/js/main.68616be2.js",
     "static/js/787.128fc6e9.chunk.js": "/Portfolio/static/js/787.128fc6e9.chunk.js",
     "static/media/Firefly guy in sunglasses posing in front of a Torii Gate 30397.jpg": "/Portfolio/static/media/Firefly guy in sunglasses posing in front of a Torii Gate 30397.ea03ce49b3b7a8e87097.jpg",
     "static/media/bizniz.png": "/Portfolio/static/media/bizniz.b38a89ec42ad18dd5401.png",
@@ -9,12 +9,12 @@
     "index.html": "/Portfolio/index.html",
     "static/media/mouse.svg": "/Portfolio/static/media/mouse.a77a5da8836261a17c9186c96ca262b0.svg",
     "static/media/50px line.svg": "/Portfolio/static/media/50px line.3712b34dbe156853774a87ec25046369.svg",
-    "main.7de0182b.css.map": "/Portfolio/static/css/main.7de0182b.css.map",
-    "main.ac34f0a4.js.map": "/Portfolio/static/js/main.ac34f0a4.js.map",
+    "main.ce82ce7d.css.map": "/Portfolio/static/css/main.ce82ce7d.css.map",
+    "main.68616be2.js.map": "/Portfolio/static/js/main.68616be2.js.map",
     "787.128fc6e9.chunk.js.map": "/Portfolio/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7de0182b.css",
-    "static/js/main.ac34f0a4.js"
+    "static/css/main.ce82ce7d.css",
+    "static/js/main.68616be2.js"
   ]
 }
