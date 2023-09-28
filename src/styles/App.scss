@@ -1,6 +1,12 @@
+@use './library' as lib;
+
 body {
-  background-color: #f4f4f4;
+  background-color: lib.$bg-color;
   font-family: 'Urbanist', sans-serif;
+}
+
+.cta {
+  color: lib.$cta-color;
 }
 
 .container {

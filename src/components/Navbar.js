@@ -1,6 +1,7 @@
 import React from "react";
 // import ReactDOM from "react-dom/client";
 import "../styles/Navbar.scss";
+import "../styles/App.scss";
 import Pdf from "../documents/CV pt.pdf";
 import Pt from "../images/portugal.png";
 import En from "../images/united-kingdom.png";
@@ -25,8 +26,11 @@ const Navbar = () => {
       <div className="container">
         <div className="nav-menu">
           <a href="#home" id="home" className="active" onClick={activate}>
-            diogomateus<span id="dev">dev</span>{" "}
-            <i className="fa-solid fa-bars" style={{ color: "#333333" }}></i>
+            diogomateus
+            <span id="dev" className="cta">
+              dev
+            </span>{" "}
+            <i className="fa-solid fa-bars cta" style={{ color: "#333333" }}></i>
           </a>
           <a href="#sobre" id="sobre" onClick={activate}>
             sobre
@@ -39,19 +43,13 @@ const Navbar = () => {
           </a>
           <a href={Pdf} target="_blank" rel="noreferrer" id="curriculo">
             curriculo{" "}
-            <i
-              className="fa-solid fa-arrow-up-right-from-square"
-              style={{ color: "#e19851" }}
-            ></i>
+            <i className="fa-solid fa-arrow-up-right-from-square cta"></i>
           </a>
 
           <div className="dropdown">
             <p className="language">
-              <img src={Pt} className="flag" alt="portuguese flag" /> &nbsp; {" "}
-              <i
-                className="fa-solid fa-chevron-down"
-                style={{ color: "#e19851" }}
-              ></i>
+              <img src={Pt} className="flag" alt="portuguese flag" /> &nbsp;{" "}
+              <i className="fa-solid fa-chevron-down cta"></i>
             </p>
             <div className="dropdown-content">
               <a href="/en" id="en">
@@ -61,7 +59,7 @@ const Navbar = () => {
           </div>
 
           <div className="dropdown burger-menu">
-            <i className="fa-solid fa-bars" style={{ color: "#e19851" }}></i>
+            <i className="fa-solid fa-bars cta"></i>
             <div className="dropdown-content-burger">
               <a href="#sobre" id="sobre2" onClick={activate}>
                 sobre
@@ -74,10 +72,7 @@ const Navbar = () => {
               </a>
               <a href={Pdf} target="_blank" rel="noreferrer" id="curriculo">
                 currículo{" "}
-                <i
-                  className="fa-solid fa-arrow-up-right-from-square"
-                  style={{ color: "#e19851" }}
-                ></i>
+                <i className="fa-solid fa-arrow-up-right-from-square cta"></i>
               </a>
             </div>
           </div>

@@ -1,3 +1,5 @@
+@use './library' as lib;
+
 .nav-bar {
     z-index: 2;
     width: 100%;
@@ -6,7 +8,7 @@
     font-size: 20px;
     display: block;
 
-    background: #f4f4f4;;
+    background: lib.$bg-color;
 
     .nav-menu {
         position: relative;
@@ -30,12 +32,12 @@
         display: inline-block;
         position: relative;
         padding: 20px;
-        color: #333;
+        color: lib.$text-color;
         text-decoration: none !important;
         cursor: pointer;
 
         #dev {
-            color: #e19851;
+            color: lib.$cta-color;
             font-weight: 700;
         }
     }
@@ -48,7 +50,7 @@
         height: 2px;
         bottom: 15px;
         left: 20px;
-        background-color: #e19851;
+        background-color: lib.$cta-color;
         transform-origin: bottom left;
         transition: transform 0.2s ease-out;
     }
@@ -90,14 +92,14 @@
             width: 84.813px;
             display: none;
             position: absolute;
-            background-color: #292929;
+            background-color: lib.$dark-cta-color;
             border-radius: 0px 0px 10px 10px;
 
             a {
                 float: none;
                 display: block;
                 text-align: left;
-                color: #e19851;
+                color: lib.$cta-color;
             }
         }
 
@@ -107,14 +109,14 @@
         }
 
         &:hover {
-            background-color: #292929;
+            background-color: lib.$dark-cta-color;
 
             i {
                 transform: rotate(-180deg);
             }
 
             p {
-                color: #e19851;
+                color: lib.$cta-color;
             }
 
         }
@@ -155,12 +157,12 @@
                 position: absolute;
                 right: 0;
                 margin-top: 20px;
-                background-color: #292929;
+                background-color: lib.$dark-cta-color;
 
                 a {
                     display: block;
                     position: relative;
-                    color: #e19851;
+                    color: lib.$cta-color;
                 }
 
                 i {
@@ -176,7 +178,7 @@
                 height: 2px;
                 bottom: 15px;
                 left: 20px;
-                background-color: #e19851;
+                background-color: lib.$cta-color;
                 transform-origin: bottom left;
                 transition: transform 0.2s ease-out;
             }

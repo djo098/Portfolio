@@ -1,3 +1,5 @@
+@use './library' as lib;
+
 .hero {
     height: 100vh;
     cursor: default;
@@ -29,24 +31,25 @@
             font-family: 'Averia Serif Libre';
             font-size: 40px;
             font-weight: 400;
-            color: #333;
+            color: lib.$dark-cta-color;
             margin-top: 50px;
             line-height: 40px;
 
             .attention {
-                color: #e19851;
+                color: lib.$cta-color;
             }
 
             .underline {
                 background:
-                    linear-gradient(to right, #e199517b, #e198517b),
-                    linear-gradient(to right, #333,#e19851, #e19851);
+                    linear-gradient(to right, lib.$cta-alpha-color, lib.$cta-alpha-color),
+                    linear-gradient(to right, lib.$dark-cta-color, lib.$cta-color, lib.$cta-color);
                 background-size: 100% 0.1em, 0 0.1em;
                 background-position: 100% 100%, 0 100%;
                 background-repeat: no-repeat;
                 transition: background-size 200ms;
 
-                &:hover, &focus {
+                &:hover,
+                &focus {
                     background-size: 0 0.1em, 100% 0.1em;
                 }
             }
@@ -70,8 +73,8 @@
 
 @media screen and (max-width: 728px) {
     .front-text {
-      font-size: 35px !important;
-      line-height: 35px !important;
-      // margin: 0px 131.5px !important;
+        font-size: 35px !important;
+        line-height: 35px !important;
+        // margin: 0px 131.5px !important;
     }
-  }
+}

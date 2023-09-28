@@ -1,8 +1,10 @@
+@use './library' as lib;
+
 .button {
     display: block;
     text-decoration: none;
-    background-color: #292929;
-    color: #e19851;
+    background-color: lib.$dark-cta-color;
+    color: lib.$cta-color;
     text-transform: uppercase;
     font-size: 25px;
     line-height: 25px;
@@ -23,8 +25,8 @@
 
     &:hover {
         transform: translateY(5px);
-        background-color: #e19851;
-        color: #292929;
+        background-color: lib.$cta-color;
+        color: lib.$dark-cta-color;
         box-shadow: none;
     }
 }

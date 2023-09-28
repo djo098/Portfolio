@@ -1,3 +1,5 @@
+@use './library' as lib;
+
 .about {
     height: auto;
     margin: 100px 0;
@@ -63,7 +65,7 @@
             }
 
             .attention {
-                color: #e19851;
+                color: lib.$cta-color;
             }
 
             .bold {
@@ -72,8 +74,8 @@
 
             .underline {
                 background:
-                    linear-gradient(to right, #e199517b, #e198517b),
-                    linear-gradient(to right, #333,#e19851, #e19851);
+                    linear-gradient(to right, lib.$cta-alpha-color, lib.$cta-alpha-color),
+                    linear-gradient(to right, lib.$dark-cta-color,lib.$cta-color, lib.$cta-color);
                 background-size: 100% 0.1em, 0 0.1em;
                 background-position: 100% 100%, 0 100%;
                 background-repeat: no-repeat;
@@ -111,7 +113,7 @@
                     position: relative;
                     width: 100px;
                     border-radius: 100%;
-                    border: solid 1px #333;
+                    border: solid 1px lib.$dark-cta-color;
                     margin: 0 20px 0 auto;
                 }
             }
