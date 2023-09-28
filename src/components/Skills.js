@@ -38,17 +38,7 @@ const BootstrapTooltip = styled(({ className, ...props }) => (
   },
 }));
 
-export default function Skills() {
-  const [open, setOpen] = React.useState(false);
-
-  const handleTooltipClose = () => {
-    setOpen(false);
-  };
-
-  const handleTooltipOpen = () => {
-    setOpen(true);
-  };
-
+const Skills = () => {
   return (
     <div className="skills">
       <div className="container">
@@ -58,7 +48,7 @@ export default function Skills() {
           </div>
           <div className="card">
             <BootstrapTooltip placement="top" title="Html 5">
-              <img src={Html5} className="skills-img" alt="Html5" /><br />
+              <img src={Html5} className="skills-img" alt="Html 5" />
             </BootstrapTooltip>
           </div>
           <div className="card">
@@ -125,4 +115,4 @@ export default function Skills() {
   );
 }
 
-// export default Skills;
+export default Skills;
