@@ -3,3 +3,11 @@ $cta-color: #239f6b;
 $cta-alpha-color: #239f6b7b;
 $bg-color: #f4f4f4;
 $dark-cta-color: #292929;
+
+:export {
+    textcolor: $text-color;
+    ctacolor: $cta-color;
+    ctaalphacolor: $cta-alpha-color;
+    bgcolor: $bg-color;
+    darkctacolor: $dark-cta-color;
+}
