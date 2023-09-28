@@ -22,18 +22,18 @@ const AboutMe = () => {
           <div className="about-me-content">
             <p>
               O meu nome é{" "}
-              <span className="attention bold underline">
+              <span className="attention bold">
                 Diogo Coelho Mateus
               </span>
               . Tenho uma licenciatura em TI e vivo em Lisboa, Portugal. Tenho
               vastas competências em variados{" "}
-              <span className="attention">programas de design</span> e{" "}
-              <span className="attention">frameworks de frontend</span>. Destaco
+              <span className="attention underline">programas de design</span> e{" "}
+              <span className="attention underline">frameworks de frontend</span>. Destaco
               o meu largo conhecimento em tecnologias como React e Bootstrap
               para projetar e desenvolver websites modernos e vibrantes. Destaco
               ainda a minha proficiência em{" "}
-              <span className="attention">tecnologias full stack</span> ou até
-              de <span className="attention">frameworks de backend</span>{" "}
+              <span className="attention underline">tecnologias full stack</span> ou até
+              de <span className="attention underline">frameworks de backend</span>{" "}
               permitindo-me criar websites mais complexos e abrangentes.
               <br />
               <br />
