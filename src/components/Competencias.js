@@ -15,7 +15,6 @@ import Github from "../images/icons8-github-70.png";
 import variables from "../styles/_library.scss";
 import { styled } from "@mui/material/styles";
 import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
-import ClickAwayListener from "@mui/material/ClickAwayListener";
 
 const CSS = {
   ctaColor: variables.ctacolor,
@@ -108,9 +107,6 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      {/* <BootstrapTooltip followCursor placement="top" title="skills" placement="top" arrow="true">
-        
-      </BootstrapTooltip> */}
     </div>
   );
 }

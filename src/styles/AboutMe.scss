@@ -73,6 +73,7 @@
             }
 
             .underline {
+                cursor: pointer;
                 background:
                     linear-gradient(to right, lib.$cta-alpha-color, lib.$cta-alpha-color),
                     linear-gradient(to right, lib.$dark-cta-color, lib.$cta-color, lib.$cta-color);

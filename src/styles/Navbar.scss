@@ -9,6 +9,10 @@
     display: block;
 
     background: lib.$bg-color;
+    
+    -webkit-box-shadow: 0px 0px 30px -15px lib.$cta-alpha-color;
+    -moz-box-shadow: 0px 0px 30px -15px lib.$cta-alpha-color;
+    box-shadow: 0px 0px 30px -15px lib.$cta-alpha-color;
 
     .nav-menu {
         position: relative;
@@ -158,9 +162,9 @@
                 right: 0;
                 margin-top: 20px;
                 background-color: lib.$dark-cta-color;
-                -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.75);
-                -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.75);
-                box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.75);
+                -webkit-box-shadow: 0px 0px 30px -15px lib.$cta-alpha-color;
+                -moz-box-shadow: 0px 0px 30px -15px lib.$cta-alpha-color;
+                box-shadow: 0px 0px 30px -15px lib.$cta-alpha-color;
 
                 a {
                     display: block;

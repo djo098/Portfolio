@@ -7,7 +7,42 @@ import pfpSmall from "../images/bizniz.png";
 // For the .header
 import { ReactComponent as LineSvg } from "../images/50px line.svg";
 
+import variables from "../styles/_library.scss";
+import { styled } from "@mui/material/styles";
+import Tooltip, { tooltipClasses } from "@mui/material/Tooltip";
+
+const CSS = {
+  ctaColor: variables.ctacolor,
+  ctaAlphaColor: variables.ctaalphacolor,
+  darkCtaColor: variables.darkctacolor,
+};
+
+const BootstrapTooltip = styled(({ className, ...props }) => (
+  <Tooltip {...props} arrow classes={{ popper: className }} />
+))(({ theme }) => ({
+  [`& .${tooltipClasses.arrow}`]: {
+    color: CSS.ctaColor,
+  },
+  [`& .${tooltipClasses.tooltip}`]: {
+    backgroundColor: CSS.ctaColor,
+    color: CSS.darkCtaColor,
+    fontFamily: "Urbanist",
+    fontWeight: 700,
+    fontSize: "12px",
+  },
+}));
+
 const AboutMe = () => {
+  const [open, setOpen] = React.useState(false);
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
   return (
     <div className="about">
       <div className="container">
@@ -22,18 +57,32 @@ const AboutMe = () => {
           <div className="about-me-content">
             <p>
               O meu nome é{" "}
-              <span className="attention bold">
-                Diogo Coelho Mateus
-              </span>
-              . Tenho uma licenciatura em TI e vivo em Lisboa, Portugal. Tenho
-              vastas competências em variados{" "}
-              <span className="attention underline">programas de design</span> e{" "}
-              <span className="attention underline">frameworks de frontend</span>. Destaco
-              o meu largo conhecimento em tecnologias como React e Bootstrap
-              para projetar e desenvolver websites modernos e vibrantes. Destaco
-              ainda a minha proficiência em{" "}
-              <span className="attention underline">tecnologias full stack</span> ou até
-              de <span className="attention underline">frameworks de backend</span>{" "}
+              <span className="attention bold">Diogo Coelho Mateus</span>. Tenho
+              uma licenciatura em TI e vivo em Lisboa, Portugal. Tenho vastas
+              competências em variados{" "}
+              <BootstrapTooltip placement="top" title="Figma | AdobeXD">
+                <span className="attention underline">programas de design</span>
+              </BootstrapTooltip>{" "}
+              e{" "}
+              <BootstrapTooltip placement="top" title="ReactJS | Material UI">
+                <span className="attention underline">
+                  frameworks de frontend
+                </span>
+              </BootstrapTooltip>
+              . Destaco o meu largo conhecimento em tecnologias como React e
+              Bootstrap para projetar e desenvolver websites modernos e
+              vibrantes. Destaco ainda a minha proficiência em{" "}
+              <BootstrapTooltip placement="top" title="MERN Stack">
+                <span className="attention underline">
+                  tecnologias full stack
+                </span>{" "}
+              </BootstrapTooltip>
+              ou até de{" "}
+              <BootstrapTooltip placement="top" title="Django | Node.js">
+                <span className="attention underline">
+                  frameworks de backend
+                </span>
+              </BootstrapTooltip>{" "}
               permitindo-me criar websites mais complexos e abrangentes.
               <br />
               <br />
