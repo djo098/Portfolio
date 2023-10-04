@@ -1,0 +1,96 @@
+@use './library' as lib;
+
+.projects {
+
+    .container {
+
+        .header {
+            display: flex;
+            padding: 0 20px;
+
+            .Svg1 {
+                margin: auto 0;
+            }
+
+            h1 {
+                font-family: 'Source Code Pro', monospace;
+                margin: auto 0;
+                margin-left: 25px;
+                font-size: 25px;
+                font-weight: 400;
+            }
+        }
+
+        .repo-card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 350px;
+            color: lib.$text-color;
+            margin-top: 100px;
+            padding: 50px;
+            background:
+                linear-gradient(to left, lib.$cta-color, lib.$cta-alpha-color);
+            border-radius: 10px;
+
+            -webkit-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 7px 40px -10px rgba(0, 0, 0, 0.75);
+
+            .repo-name {
+                text-transform: capitalize;
+                font-size: 50px;
+                font-weight: 700;
+            }
+
+            .description {
+                width: 300px;
+            }
+
+            .mui-button {
+                width: 48px;
+                height: 48px;
+                background-color: lib.$dark-cta-color;
+                color: lib.$cta-color;
+                -webkit-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.75);
+                -moz-box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.75);
+                box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.75);
+                transform: translateY(0);
+                transition: transform 0.2s, background-color 0.2s, color 0.2s, box-shadow 0.2s;
+
+                &:hover {
+                    background-color: lib.$cta-alpha-color;
+                    color: lib.$dark-cta-color;
+                    transform: translateY(5px);
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 728px) {
+    .container {
+        padding: 0;
+
+        .repo-card {
+            width: auto;
+            border-radius: 0px !important;
+        }
+    }
+}
+
+@media (max-width: 435px) {
+    .container {
+        padding: 0;
+
+        .repo-card {
+            width: auto;
+            border-radius: 0px !important;
+
+            .repo-name {
+                font-size: 30px !important;
+            }
+        }
+    }
+}
